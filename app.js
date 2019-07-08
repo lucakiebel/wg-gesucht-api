@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const options = require("./settings.json");
 
 (async () => {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({executablePath:"/usr/bin/chromium-browser"});
   const page = await browser.newPage();
   page.setViewport({
     width:1920,
@@ -40,7 +40,7 @@ const options = require("./settings.json");
 
   console.log("Eingeloggt")
 
-  await page.waitForSelector(`.deaktivieren_${options.ids[0]}`);
+  await page.waitForSelector(`.deactivated_ad_button['data-ad_id=${options.ids[0]}']`);
 
   console.log("Button gefunden")
 
