@@ -52,7 +52,7 @@ const options = require("./settings.json");
 
 
   for (id of options.ids) {
-    await page.click(`.deaktivieren_${id}`);
+    await page.click(`.deactivated_ad_button[data-ad_id="${id}"]`);
     await page.evaluate(async() => {
         await new Promise(function(resolve) {
                setTimeout(resolve, 500)
@@ -62,7 +62,7 @@ const options = require("./settings.json");
   console.log("Deaktiviert")
 
   for (id of options.ids) {
-    await page.click(`.aktivieren_${id}`);
+    await page.click(`.activated_ad_button[data-ad_id="${id}"]`);
     await page.evaluate(async() => {
         await new Promise(function(resolve) {
                setTimeout(resolve, 500)
