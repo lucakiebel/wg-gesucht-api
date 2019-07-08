@@ -40,7 +40,7 @@ const options = require("./settings.json");
 
   console.log("Eingeloggt")
 
-  await page.waitForSelector(`.deactivated_ad_button['data-ad_id=${options.ids[0]}']`);
+  await page.waitForSelector(`.deactivated_ad_button[data-ad_id="${options.ids[0]}"]`);
 
   console.log("Button gefunden")
 
