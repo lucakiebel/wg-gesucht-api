@@ -1,0 +1,24 @@
+{
+  "name": "wg-gesucht-api",
+  "version": "1.0.0",
+  "description": "Node Interface for WG-Gesucht.de",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucakiebel/wg-gesucht-api.git"
+  },
+  "author": "Luca Kiebel <opensource@luca-kiebel.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucakiebel/wg-gesucht-api/issues"
+  },
+  "homepage": "https://github.com/lucakiebel/wg-gesucht-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^1.18.1",
+    "request-promise": "^4.2.4"
+  }
+}
