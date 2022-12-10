@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/lucakiebel/wg-gesucht-api#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "puppeteer": "^1.18.1",
     "request-promise": "^4.2.4"
   }
